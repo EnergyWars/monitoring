@@ -28,7 +28,10 @@ sobald ein konfiguriertes Verhalten eintritt. Erste unterstützte Seiten-Art:
 - Bedingung „erfüllt", sobald der Pfad mindestens einen Wert liefert
   (Doctolib-Beispiel aus `beispiel.md` exakt abgedeckt).
 - Button „Jetzt testen" im Formular führt die Prüfung sofort aus (ohne zu
-  speichern) und zeigt Trefferanzahl, „Kein Treffer" oder eine Fehlermeldung.
+  speichern), zeigt Trefferanzahl, „Kein Treffer" oder eine Fehlermeldung —
+  und darunter zusätzlich die genaue, rohe HTTP-Antwort (scrollbar,
+  auswählbar/kopierbar), um den JSON-Pfad-Ausdruck gegen die echte Antwort
+  prüfen zu können.
 - Die Typ-Auswahl ist als Dropdown-Struktur angelegt, aktuell aber auf
   „JSON-API" fixiert — weitere Seiten-Arten lassen sich ergänzen, ohne das
   Datenmodell zu ändern (`PageType`-Enum).

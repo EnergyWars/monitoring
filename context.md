@@ -41,7 +41,7 @@ ist grün.
 | Kern-Prüflogik (Fetch → Auswerten → Persistieren → Benachrichtigen → Re-Notify) | fertig | `data/monitoring/MonitorCheckUseCase.kt` |
 | Datenbank (Seiten + Ergebnisse) | fertig | `data/db/AppDatabase.kt`, `MonitoredPageEntity.kt`, `CheckResultEntity.kt`, `MonitoredPageDao.kt`, `CheckResultDao.kt` |
 | Repositories | fertig | `data/monitoring/MonitoredPagesRepository.kt` (+Room-Impl), `CheckResultsRepository.kt` (+Room-Impl) |
-| Hintergrund-Ausführung alle 15 Min. (Alarm-Kette + WorkManager-Fallback + Boot-Receiver) | fertig | `background/AlarmScheduler.kt`, `background/MonitorAlarmReceiver.kt`, `background/BootReceiver.kt`, `background/MonitorCheckWorker.kt`, `MonitoringApp.kt` |
+| Hintergrund-Ausführung alle 30 Min. + 0-300s Zeit-Jitter (Alarm-Kette + WorkManager-Fallback + Boot-Receiver) | fertig | `background/AlarmScheduler.kt`, `background/MonitorAlarmReceiver.kt`, `background/BootReceiver.kt`, `background/MonitorCheckWorker.kt`, `background/Jitter.kt`, `MonitoringApp.kt` |
 | Benachrichtigung + Bestätigungspflicht + stündliche Wiederholung | fertig | `background/NotificationHelper.kt`, `background/Notifier.kt`, `background/NotificationAckReceiver.kt` |
 | Ergebnis-Verlauf je Seite | fertig | `ui/pagedetail/PageDetailScreen.kt`, `ui/pagedetail/PageDetailViewModel.kt` |
 | Zuverlässigkeits-Einstellungen (Benachrichtigungen/Akku/Alarme/Xiaomi-Autostart) | fertig | `ui/settings/ReliabilitySettingsScreen.kt`, `ui/settings/ReliabilitySettingsViewModel.kt`, `background/ReliabilityStatus.kt` |
@@ -74,6 +74,10 @@ ist grün.
 - `MonitorCheckUseCase.renotifyOutstanding()` übernimmt die stündliche
   Wiederholung anhand der reinen Funktion `needsRenotify(...)` — kein
   separater Alarm nötig.
+- `MonitorCheckWorker.doWork()` wartet vor dem eigentlichen Prüfdurchlauf
+  eine zufällige Zeit (`randomJitterMillis()`, 0–300 s), damit die
+  ausgehenden Requests nicht exakt im 30-Minuten-Takt beim Zielserver
+  ankommen.
 
 ## Offene Punkte
 
