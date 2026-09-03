@@ -27,7 +27,7 @@ fun needsRenotify(now: Long, lastNotifiedAt: Long, acknowledged: Boolean): Boole
 
 @Singleton
 class NotificationHelper @Inject constructor(
-    @ApplicationContext private val context: Context,
+    @param:ApplicationContext private val context: Context,
 ) : Notifier {
     private val manager = context.getSystemService(NotificationManager::class.java)
 

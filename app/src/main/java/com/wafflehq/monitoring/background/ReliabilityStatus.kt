@@ -22,7 +22,7 @@ private val XIAOMI_MANUFACTURERS = listOf("xiaomi", "redmi", "poco", "blackshark
 
 @Singleton
 class ReliabilityChecker @Inject constructor(
-    @ApplicationContext private val context: Context,
+    @param:ApplicationContext private val context: Context,
     private val alarmScheduler: AlarmScheduler,
 ) {
     fun status(): ReliabilityStatus {

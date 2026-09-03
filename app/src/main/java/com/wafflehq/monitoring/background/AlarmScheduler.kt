@@ -18,7 +18,7 @@ fun nextTriggerAtMillis(now: Long, intervalMillis: Long = CHECK_INTERVAL_MILLIS)
 
 @Singleton
 class AlarmScheduler @Inject constructor(
-    @ApplicationContext private val context: Context,
+    @param:ApplicationContext private val context: Context,
     private val clock: Clock,
 ) {
     private val alarmManager = context.getSystemService(AlarmManager::class.java)
