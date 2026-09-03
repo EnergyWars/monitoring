@@ -1,0 +1,4 @@
+URL: https://www.doctolib.de/availabilities.json?visit_motive_ids=14605711&agenda_ids=1941055&practice_ids=601915&insurance_sector=public&telehealth=false&start_date=2026-09-03&limit=15
+Beispiel-Response: {"availabilities":[{"date":"2026-09-03","slots":[]},{"date":"2026-09-04","slots":[]},{"date":"2026-09-05","slots":[]},{"date":"2026-09-06","slots":[]},{"date":"2026-09-07","slots":[]},{"date":"2026-09-08","slots":[]},{"date":"2026-09-09","slots":[]},{"date":"2026-09-10","slots":[]},{"date":"2026-09-11","slots":[]},{"date":"2026-09-12","slots":[]},{"date":"2026-09-13","slots":[]},{"date":"2026-09-14","slots":[]},{"date":"2026-09-15","slots":[]},{"date":"2026-09-16","slots":[]},{"date":"2026-09-17","slots":[]}],"total":0,"reason":"no_availabilities","message":"Keine Termine online verfügbar"}
+
+Ich will jetzt benachrichtigt werden, wenn in dem avaiabilities array ein beliebiger der werte dort unter slots mindestens einen wert in dem array hat.

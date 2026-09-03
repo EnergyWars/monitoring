@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Monitoring</string>
+
+    <string name="label_back">Zurück</string>
+    <string name="label_cancel">Abbrechen</string>
+    <string name="label_save">Speichern</string>
+    <string name="label_delete">Löschen</string>
+    <string name="label_edit">Bearbeiten</string>
+    <string name="label_settings">Einstellungen</string>
+
+    <string name="cd_open_settings">Einstellungen öffnen</string>
+    <string name="cd_menu">Menü öffnen</string>
+    <string name="cd_home">Start</string>
+    <string name="cd_add_page">Seite hinzufügen</string>
+
+    <!-- App-Header &amp; Navigation -->
+    <string name="header_menu">Menü</string>
+    <string name="header_home">Start</string>
+    <string name="nav_section_pages">Navigation</string>
+
+    <!-- Einstellungs-Seiten -->
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_row_features">Features</string>
+    <string name="settings_display_title">Anzeige</string>
+    <string name="settings_display_sub">Design</string>
+    <string name="settings_group_general">Allgemein</string>
+    <string name="settings_design_label">Design</string>
+    <string name="settings_theme_system">Systemstandard</string>
+    <string name="settings_theme_light">Hell</string>
+    <string name="settings_theme_dark">Dunkel</string>
+    <string name="settings_row_reliability">Zuverlässigkeit</string>
+    <string name="settings_row_reliability_sub">Benachrichtigungen, Akku, Alarme</string>
+
+    <string name="feature_files_title">Feature-Liste</string>
+    <string name="feature_files_show_hidden">Ausgeblendete anzeigen</string>
+    <string name="feature_files_empty">Keine Feature-Dateien vorhanden.</string>
+    <string name="feature_files_all_hidden">Alle Einträge ausgeblendet.</string>
+
+    <!-- Home / Seiten-Liste -->
+    <string name="home_title">Überwachte Seiten</string>
+    <string name="home_empty_title">Noch keine Seite hinzugefügt.</string>
+    <string name="home_empty_body">Tippe auf +, um eine Seite zu überwachen.</string>
+    <string name="home_type_json_api">JSON-API</string>
+    <string name="home_status_none">Noch nicht geprüft</string>
+    <string name="home_status_ok_no_match">Kein Treffer</string>
+    <string name="home_status_ok_match">Treffer gefunden</string>
+    <string name="home_status_error">Fehler bei letzter Prüfung</string>
+    <string name="home_last_checked">Zuletzt geprüft: %1$s</string>
+    <string name="home_enabled_switch_cd">Überwachung aktiv</string>
+    <string name="home_reliability_banner_title">Zuverlässigkeit einrichten</string>
+    <string name="home_reliability_banner_body">Damit die 15-Minuten-Prüfung zuverlässig läuft, fehlen noch Freigaben.</string>
+    <string name="home_reliability_banner_action">Einrichten</string>
+    <string name="home_open_history_cd">Verlauf öffnen</string>
+
+    <!-- Seite hinzufügen/bearbeiten -->
+    <string name="page_form_title_new">Seite hinzufügen</string>
+    <string name="page_form_title_edit">Seite bearbeiten</string>
+    <string name="page_form_name_label">Name</string>
+    <string name="page_form_type_label">Typ</string>
+    <string name="page_form_url_label">URL</string>
+    <string name="page_form_json_path_label">JSON-Pfad</string>
+    <string name="page_form_json_path_helper">Bedingung ist erfüllt, wenn dieser Pfad in der JSON-Antwort mindestens einen Wert liefert. „[*]“ iteriert über ein Array.</string>
+    <string name="page_form_enabled_label">Aktiv</string>
+    <string name="page_form_enabled_sub">Wird bei der nächsten Prüfung berücksichtigt</string>
+    <string name="page_form_test_button">Jetzt testen</string>
+    <string name="page_form_test_running">Prüfe …</string>
+    <string name="page_form_test_result_match">%1$d Treffer gefunden</string>
+    <string name="page_form_test_result_no_match">Kein Treffer</string>
+    <string name="page_form_test_result_error">Fehler: %1$s</string>
+    <string name="page_form_test_response_label">Antwort</string>
+    <string name="page_form_delete_confirm_title">Seite löschen?</string>
+    <string name="page_form_delete_confirm_body">Der Prüf-Verlauf dieser Seite wird ebenfalls gelöscht.</string>
+    <string name="page_form_error_name_required">Name darf nicht leer sein.</string>
+    <string name="page_form_error_url_required">URL darf nicht leer sein.</string>
+    <string name="page_form_error_url_invalid">Ungültige URL. Bitte mit http:// oder https:// beginnen.</string>
+    <string name="page_form_error_path_required">JSON-Pfad darf nicht leer sein.</string>
+
+    <!-- Verlauf einer Seite -->
+    <string name="page_detail_title">Verlauf</string>
+    <string name="page_detail_empty">Noch keine Treffer.</string>
+    <string name="page_detail_matched_count">%1$d Treffer</string>
+    <string name="page_detail_acknowledge">Bestätigen</string>
+    <string name="page_detail_acknowledged">Bestätigt</string>
+    <string name="page_detail_open_badge">Offen</string>
+
+    <!-- Zuverlässigkeit -->
+    <string name="reliability_title">Zuverlässigkeit</string>
+    <string name="reliability_intro">Damit die App auch im Hintergrund und im Energiesparmodus zuverlässig alle 15 Minuten prüft, sind je nach Hersteller zusätzliche Freigaben nötig.</string>
+    <string name="reliability_notifications_title">Benachrichtigungen</string>
+    <string name="reliability_notifications_body">Ohne Erlaubnis kann die App dich nicht über Treffer informieren.</string>
+    <string name="reliability_status_granted">Erlaubt</string>
+    <string name="reliability_status_missing">Nicht erlaubt</string>
+    <string name="reliability_notifications_action">Erlauben</string>
+    <string name="reliability_battery_title">Akku-Optimierung</string>
+    <string name="reliability_battery_body">Verhindert, dass das System die App im Hintergrund einschränkt.</string>
+    <string name="reliability_battery_action">Deaktivieren</string>
+    <string name="reliability_alarms_title">Alarme &amp; Erinnerungen</string>
+    <string name="reliability_alarms_body">Nötig, damit die 15-Minuten-Prüfung auch im Ruhezustand pünktlich startet.</string>
+    <string name="reliability_alarms_action">Erlauben</string>
+    <string name="reliability_autostart_title">Autostart</string>
+    <string name="reliability_autostart_body">Xiaomi/MIUI-Geräte beenden Hintergrund-Apps sonst häufig automatisch.</string>
+    <string name="reliability_autostart_action">Einstellungen öffnen</string>
+
+    <!-- Benachrichtigungen -->
+    <string name="notification_channel_name">Monitoring-Treffer</string>
+    <string name="notification_channel_desc">Benachrichtigungen, wenn eine überwachte Seite das erwartete Verhalten zeigt.</string>
+    <string name="notification_title">%1$s: Treffer gefunden</string>
+    <string name="notification_body">%1$d Treffer gefunden.</string>
+    <string name="notification_action_confirm">Bestätigen</string>
+</resources>
